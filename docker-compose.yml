@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  scraper:
+    build: .
+    command: python arxiv_scraper.py
+    volumes:
+      - ./papers:/app/papers
